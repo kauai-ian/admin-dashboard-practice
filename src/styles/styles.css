@@ -329,8 +329,27 @@ hr {
     grid-area: projects;
   }
 
+  .project-list {
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+    column-gap: 25px;
+  }
+
   .announcements-container {
     grid-area: announcements;
+  }
+
+  .announcement-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .project-title {
+    padding-top: 25px;
   }
 
   .trending-container {
