@@ -310,6 +310,48 @@ hr {
 
   nav {
     grid-area: nav;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-auto-columns: 1fr;
+    /* grid-auto-rows: 50px auto; */
+    grid-template-areas:
+      "icon h1"
+      "menu menu";
+      column-gap: 10px;
+  }
+
+  .nav-menu {
+    display: grid;
+    transform: none;
+    position: static;
+    grid-area: menu;
+    justify-self: start;
+    align-self: start;
+  }
+
+  #hamburger {
+    display: none;
+    visibility: none;
+  }
+
+  .hamburger-open {
+    animation: none;
+  }
+
+  .menu-group {
+    row-gap: var(--gap);
+    grid-template-columns: auto 1fr;
+    align-self: start;
+    /* grid-area: menu; */
+    height: auto;
+  }
+
+  .icon.large {
+    grid-area: icon;
+  }
+
+  h1 {
+    grid-area: h1;
   }
 
   header {
