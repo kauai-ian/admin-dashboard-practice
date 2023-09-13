@@ -317,7 +317,9 @@ hr {
     grid-template-areas:
       "icon h1"
       "menu menu";
-      column-gap: 10px;
+    column-gap: 10px;
+    padding-right: 7rem;
+    row-gap: 1rem;
   }
 
   .nav-menu {
@@ -327,6 +329,7 @@ hr {
     grid-area: menu;
     justify-self: start;
     align-self: start;
+    row-gap: 3rem;
   }
 
   #hamburger {
@@ -342,8 +345,14 @@ hr {
     row-gap: var(--gap);
     grid-template-columns: auto 1fr;
     align-self: start;
-    /* grid-area: menu; */
     height: auto;
+    row-gap: 20px;
+    letter-spacing: 2px;
+  }
+
+  .menu-group a {
+    font-size: 20px;
+    font-weight: 500;
   }
 
   .icon.large {
