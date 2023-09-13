@@ -314,6 +314,56 @@ hr {
 
   header {
     grid-area: header;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "search account"
+      "user controls";
+    padding: 8px var(--padding);
+  }
+
+  .search-container {
+    grid-area: search;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border: none;
+    background-color: var(--light-grey);
+    border-radius: 2rem;
+  }
+
+  .account-container {
+    grid-area: account;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .user-info {
+    grid-area: user;
+    align-content: center;
+  }
+
+  p.user {
+    font-size: 24px;
+    padding-top: 6px;
+  }
+
+  .controls {
+    grid-area: controls;
+  }
+
+  .settings-badge {
+    display: block;
+  }
+
+  .header-button {
+    height: 36px;
+    width: 90px;
+    border-radius: 3rem;
   }
 
   main {
