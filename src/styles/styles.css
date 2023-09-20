@@ -313,7 +313,6 @@ hr {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
     grid-auto-columns: 1fr;
-    /* grid-auto-rows: 50px auto; */
     grid-template-areas:
       "icon h1"
       "menu menu";
